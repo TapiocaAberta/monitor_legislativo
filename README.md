@@ -1,4 +1,4 @@
-PoliticometroSJC
+Projetos Politicos SJC
 ================
 
 Ranking de Políticos da cidade de SJC
