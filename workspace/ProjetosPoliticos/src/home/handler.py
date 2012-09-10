@@ -12,7 +12,8 @@ class home():
                   "politicos_link": "/politicos", 
                   "mapa_link": "/mapa",
                   "sobre_link": "/sobre"}
-        self.write_template("home.html", values)
+        #self.write_template("home.html", values)
+        self.write_template("about.html", values)
 
     def sobre(self):
         values = {"projetos_link": "/projetos", #cengine.handler_to_path(home.index 

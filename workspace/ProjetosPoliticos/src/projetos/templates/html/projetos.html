@@ -1,6 +1,7 @@
-{% extends "base.html" %} {% block nav%} {{ navbar("projetos")}}
-{%endblock %} {% block content %}
+{% extends "base.html" %} 
+{% block nav%} {{ navbar("projetos")}} {%endblock %} 
 
+{% block content %}
 <div class="marketing">
 	<h1>Listagem de Projetos.</h1>
 	<p class="marketing-byline">Visualize e dê a sua opinião votando
@@ -9,16 +10,31 @@
 
 <div class="row-fluid">
 	<div class="span12">
-		{% for lei in leis %}
-			<h3>{{lei.name}}</h3><a href="{{lei.link}}">Link para o projeto original</a>
-			<p><h4> Descrição: </h4>{{lei.desc}}</p>
-		{% endfor %}
+		<table class="table table-striped table-bordered">
+			<tbody>
+				{% for lei in leis %}
+				<tr>
+					<td>
+						<dl>
+							<dt>
+								<h3>{{lei.name}}</h3>
+							</dt>
+							<dd>
+								<a href="{{lei.link}}">Link para o projeto original</a>
+							</dd>
+							<dd>
+								<p>
+								<h4>Descrição:</h4>
+								{{lei.desc}}
+								</p>
+							</dd>
+						</dl>
+					</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
 	</div>
 </div>
 
-
 {% endblock %}
-
-
-
-
