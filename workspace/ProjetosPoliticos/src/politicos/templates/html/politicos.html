@@ -18,11 +18,12 @@ endblock %} {% block content %}
 	<tbody>
 		{% for politico in politicos %}
 		<tr>
-			<td><img src="/commom/static/img/vereadores/{{politico.foto}}.jpg"
-				alt="{{politico.nome}}" title="{{politico.nome}}"></td>
+			<td>
+				<img src="/commom/static/img/vereadores/{{politico.foto}}.jpg" alt="{{politico.nome}}" title="{{politico.nome}}">
+			</td>
 			<td>
 				<h2>
-					<a href="/politicos/perfilPolitico.html">{{politico.nome}}</a>
+					<a href="/politicos/perfil/{{politico.id_politico}}">{{politico.nome}}</a>
 				</h2>
 			</td>
 			<td><p>{{politico.partido}}</p></td>
