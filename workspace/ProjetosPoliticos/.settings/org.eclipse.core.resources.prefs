@@ -1,7 +1,15 @@
 eclipse.preferences.version=1
 encoding//src/commom/handler.py=utf-8
 encoding//src/home/handler.py=utf-8
+encoding//src/home/templates/html/about.html=UTF-8
+encoding//src/home/templates/html/home.html=UTF-8
 encoding//src/mapa/handler.py=utf-8
 encoding//src/politicos/handler.py=utf-8
+encoding//src/politicos/templates=UTF-8
 encoding//src/projetos/handler.py=utf-8
 encoding//src/projetos/model.py=utf-8
+encoding//src/projetos/templates/html/projetos.html=UTF-8
+encoding//src/usuario/handler.py=utf-8
+encoding/<project>=UTF-8
+encoding/src=UTF-8
+separateDerivedEncodings=true

@@ -1,10 +1,12 @@
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 '''
-Created on 13/08/2012
+Created on 06/03/2012
 
-@author: PauloLuan
+@author: Paulo Luan
 '''
-
 class home():
     def index(self):
         self.write_template("indexUsuario.html")
+
+
+

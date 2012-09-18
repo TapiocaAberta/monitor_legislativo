@@ -1,7 +1,5 @@
-{% extends "base.html" %} 
-{% block nav%} {{ navbar("projetos")}} {%endblock %} 
-
-{% block content %}
+{% extends "base.html" %} {% block nav%} {{ navbar("projetos")}}
+{%endblock %} {% block content %}
 <div class="marketing">
 	<h1>Listagem de Projetos.</h1>
 	<p class="marketing-byline">Visualize e dê a sua opinião votando
@@ -29,6 +27,7 @@
 								</p>
 							</dd>
 						</dl>
+
 					</td>
 				</tr>
 				{% endfor %}

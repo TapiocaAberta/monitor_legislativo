@@ -1758,3 +1758,94 @@ Binding(CTRL+SHIFT+ARROW_DOWN,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.python.pydev.ui.editor.scope,,,system)
+!SESSION 2012-09-16 14:54:13.648 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.7.0_03
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2012-09-16 14:55:57.057
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-09-16 14:55:57.057
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@3a76817b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(com.python.pydev.analysis.actions.pyGlobalsBrowserWorkbench,Python Show Global Tokens (Global),
+		Python Show Global Tokens (Global),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2c2618ee,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.python.pydev.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.python.pydev.editor.actions.pyShowBrowser,Python Show Global Tokens (Editor),
+		Python Show Global Tokens (Editor),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		org.eclipse.ui.internal.MakeHandlersGo@7186c0ef,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.python.pydev.ui.editor.scope,,,system)
+
+!ENTRY org.eclipse.core.jobs 2 2 2012-09-16 14:56:22.392
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.google.gdt.eclipse.managedapis.impl.ManagedApiChecker$ManagedApiCheckerJob
+!SESSION 2012-09-17 15:04:45.321 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.7.0_03
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2012-09-17 17:51:10.345
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-09-17 17:51:10.345
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@33ee588e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(com.python.pydev.analysis.actions.pyGlobalsBrowserWorkbench,Python Show Global Tokens (Global),
+		Python Show Global Tokens (Global),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		org.eclipse.ui.internal.MakeHandlersGo@64f7ed44,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.python.pydev.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.python.pydev.editor.actions.pyShowBrowser,Python Show Global Tokens (Editor),
+		Python Show Global Tokens (Editor),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		org.eclipse.ui.internal.MakeHandlersGo@50fa3f25,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.python.pydev.ui.editor.scope,,,system)
+
+!ENTRY org.python.pydev.core 1 1 2012-09-17 17:51:54.039
+!MESSAGE Did not expect adapter request: interface org.eclipse.jdt.core.IJavaElement
+!STACK 0
+java.lang.RuntimeException: Did not expect adapter request: interface org.eclipse.jdt.core.IJavaElement
+	at org.python.pydev.core.log.Log.logInfo(Log.java:112)
+	at org.python.pydev.navigator.elements.WrappedResource.getAdapterFromActualObject(WrappedResource.java:159)
+	at org.python.pydev.navigator.elements.WrappedResource.getAdapter(WrappedResource.java:105)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchShortcut.findExistingLaunchConfigurations(JUnitLaunchShortcut.java:467)
+	at org.eclipse.jdt.junit.launcher.JUnitLaunchShortcut.getLaunchConfigurations(JUnitLaunchShortcut.java:429)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.getLaunchConfigurations(LaunchShortcutExtension.java:496)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:493)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:322)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:240)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$2.run(LaunchingResourceManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
