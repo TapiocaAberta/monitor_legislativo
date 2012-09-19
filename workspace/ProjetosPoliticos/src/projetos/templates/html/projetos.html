@@ -11,6 +11,20 @@
 	</p>
 </div>
 
+{% macro macroNota(nota) %}
+<div class="loading-bar">
+	<div
+	{{'class="amount red"' if nota<49}}
+	{{'class="amount green"' if nota>50}}
+	style="width: {{nota}}%;">
+		<div class="loaded">
+			{{nota}}%
+		</div>
+		<div class="lines"></div>
+	</div>
+</div>
+{% endmacro %}
+
 <div class="row-fluid">
 	<div class="span12">
 		<table class="table table-striped table-bordered">
@@ -37,20 +51,7 @@
 							<img src="commom/static/img/like.png" />
 						</div>
 						<div class="span6">
-							{% macro macroNota(nota=lei.nota) %}
-							<div class="loading-bar">
-								<div
-									{{'class="amount red"' if nota<49}}
-									{{'class="amount green"' if nota>50}}
-									style="width: {{lei.nota}}%;">
-
-									<div class="loaded">
-										{{lei.nota}}%
-									</div>
-									<div class="lines"></div>
-								</div>
-							</div> {% endmacro %}
-							{{ macroNota() }}
+							{{ macroNota(lei.nota)}}
 						</div>
 						<div class="span1">
 							<img src="commom/static/img/dislike.png" />
