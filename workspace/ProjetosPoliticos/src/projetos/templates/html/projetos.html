@@ -12,7 +12,9 @@
 </div>
 
 {% macro macroNota(nota) %}
-
+<p class="marketing p">
+	Porcentagem de Votos
+</p>
 <div class="progress">
 	<div class="bar bar-success" style="width: {{nota}}%">
 		<h4>{{nota}}%<h4>
@@ -21,7 +23,6 @@
 		<h4>{{(100-nota)}}%<h4>
 	</div>
 </div>
-
 <!--
 <div class="loading-bar">
 <div
@@ -59,13 +60,19 @@ style="width: {{nota}}%;">
 					</dl>
 					<div class="row-fluid">
 						<div class="span1 offset1">
-							<img src="commom/static/img/like.png" class="img-circle"/>
+							<p class="marketing p" style="color:#468847">
+								12345 votos
+							</p>
+							<a href="#"><img src="commom/static/img/like.png" class="img-circle" style="top: 0"/> </a>
 						</div>
 						<div class="span6">
 							{{ macroNota(lei.nota)}}
 						</div>
 						<div class="span1">
-							<img src="commom/static/img/dislike.png" class="img-circle"/>
+							<p class="marketing p" style="color:#B94A48">
+								12345 votos
+							</p>
+							<a href="#"><img src="commom/static/img/dislike.png" class="img-circle"/> </a>
 						</div>
 					</div></td>
 				</tr>
