@@ -1,3 +1,7 @@
+p {
+	text-align: justify;
+}
+
 /* Marketing section of Overview
  -------------------------------------------------- */
 .marketing {
@@ -19,6 +23,7 @@
 }
 
 .marketing p {
+	text-align: center;
 	font-size: 16px;
 	line-height: 1.5;
 }

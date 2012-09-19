@@ -151,7 +151,10 @@ class home():
               "mapa_link": "/mapa",
               "sobre_link": "/sobre",
               "aba_ativa": "politicos",
-              "perfil" : [{"id_politico":"1234", "nome":"nome_teste"}]               
+              "politico" : {"id_politico": "1",
+                           "nome": "Alexandre da Farmácia",
+                           "partido": "PP",
+                           "foto": "alexandre"}               
         }
         self.write_template("perfilPolitico.html", values)
         
