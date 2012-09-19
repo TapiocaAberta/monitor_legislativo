@@ -1,5 +1,9 @@
-{% extends "base.html" %} {% block nav%} {{navbar("politicos")}} {%
-endblock %} {% block content %}
+{% extends "base.html" %} 
+{% block nav %} 
+{{navbar("politicos")}} 
+{% endblock %} 
+
+{% block content %}
 <div class="marketing">
 	<h1>Perfis dos Políticos.</h1>
 	<p class="marketing-byline">Pesquise por políticos, visualize os
@@ -23,7 +27,7 @@ endblock %} {% block content %}
 			</td>
 			<td>
 				<h2>
-					<a href="/politicos/perfil/{{politico.id_politico}}">{{politico.nome}}</a>
+					<a href="/politicos/perfil/">{{politico.nome}}</a>
 				</h2>
 			</td>
 			<td><p>{{politico.partido}}</p></td>
