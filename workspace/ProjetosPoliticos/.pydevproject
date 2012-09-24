@@ -3,8 +3,14 @@
 
 <pydev_project>
 <pydev_variables_property name="org.python.pydev.PROJECT_VARIABLE_SUBSTITUTION">
+<key>PathMac</key>
+<value>/usr/local/google_appengine</value>
 <key>GOOGLE_APP_ENGINE</key>
 <value>/usr/local/google_appengine</value>
+<key>PathDell</key>
+<value>/home/anonymous/Desenvolvimento/AppEngineSDK/google_appengine</value>
+<key>PathFatec</key>
+<value>teste</value>
 </pydev_variables_property>
 <pydev_pathproperty name="org.python.pydev.PROJECT_SOURCE_PATH">
 <path>/ProjetosPoliticos/src</path>

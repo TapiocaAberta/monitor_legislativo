@@ -145,17 +145,30 @@ class home():
         self.write_template("politicos.html", values)
         
     def perfil(self):
-        values = {
-              "projetos_link": "/projetos",
-              "politicos_link": "/politicos",
-              "mapa_link": "/mapa",
-              "sobre_link": "/sobre",
-              "aba_ativa": "politicos",
-              "politico" : {"id_politico": "1",
-                           "nome": "Alexandre da Farmácia",
-                           "partido": "PP",
-                           "foto": "alexandre"}               
-        }
+        values = {"projetos_link": "/projetos", #cengine.handler_to_path(home.index 
+                  "politicos_link": "/politicos",
+                  "mapa_link": "/mapa",
+                  "sobre_link": "/sobre",
+                  "aba_ativa": "politicos",
+                  "politico" : {"id_politico": "1",
+                               "nome": "Alexandre da Farmácia",
+                               "partido": "PP",
+                               "foto": "alexandre"},
+                  "leis" : [
+                            {
+                             "id_projeto": "7",
+                             "nota": 75,
+                             "link": "http://www.ceaam.net/sjc/legislacao/leis/2012/Lc0464.htm",
+                             "name": " LEI COMPLEMENTAR Nº 464, DE 23/03/2012",
+                             "desc": "Autoriza o Poder Executivo a outorgar concessão de direito real de uso de uma área de domínio público municipal ao Serviço Social do Comércio - SESC, e dá outras providências."
+                            },
+                            {
+                             "id_projeto": "8",
+                             "nota": 97,
+                             "link": "http://www.ceaam.net/sjc/legislacao/leis/2012/Lc0463.htm",
+                             "name": " LEI COMPLEMENTAR Nº 463, DE 28/02/2012",
+                             "desc": "Altera a redação do inciso III, do artigo 3º da Lei nº 4.269, de 11 de setembro de 1992, com as alterações introduzidas pela Lei Complementar nº 367, de 10 de junho de 2008 e pela Lei Complementar nº 412, de 21 de dezembro de 2009, que \"Cria o Conselho Municipal de Segurança\"."
+                            }
+                            ]
+                  }
         self.write_template("perfilPolitico.html", values)
-        
-        
