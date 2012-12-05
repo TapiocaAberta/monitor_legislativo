@@ -1,4 +1,4 @@
-from google.appengine.ext import ndb
+﻿from google.appengine.ext import ndb
 from google.appengine.api.datastore_errors import BadValueError
 import hashlib
 import random

@@ -1,9 +1,10 @@
-#-*- coding: utf-8 -*-
+﻿#-*- coding: utf-8 -*-
 '''
 Created on 13/08/2012
 
 @author: PauloLuan
 '''
+# from __future__ import unicode_literals
 from zen.ce import cengine
 
 class home():

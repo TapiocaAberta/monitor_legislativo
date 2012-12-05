@@ -1,23 +1,18 @@
-#-*- coding: utf-8 -*-
+﻿#-*- coding: utf-8 -*-
 '''
 Created on 13/08/2012
 
 @author: PauloLuan
 '''
+
+from __future__ import unicode_literals
 from zen.ce import cengine
+from google.appengine.api import users
 
 class home():
     def index(self):
-        values = {"projetos_link": "/projetos", #cengine.handler_to_path(home.index 
-                  "politicos_link": "/politicos", 
-                  "mapa_link": "/mapa",
-                  "sobre_link": "/sobre"}
-        #self.write_template("home.html", values)
-        self.write_template("about.html", values)
-
-    def sobre(self):
-        values = {"projetos_link": "/projetos", #cengine.handler_to_path(home.index 
-                  "politicos_link": "/politicos", 
-                  "mapa_link": "/mapa",
-                  "sobre_link": "/sobre"}
-        self.write_template("about.html", values)
+        values = {
+                  "aba_ativa": "sobre",
+                  }
+        self.write_template('about.html', values)
+    

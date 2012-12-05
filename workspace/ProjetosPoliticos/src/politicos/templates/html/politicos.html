@@ -1,38 +1,42 @@
-{% extends "base.html" %} 
-{% block nav %} 
-{{navbar("politicos")}} 
-{% endblock %} 
+﻿{% extends "base.html" %}
+{% block nav %}
+{{navbar("politicos")}}
+{% endblock %}
 
 {% block content %}
 <div class="marketing">
-	<h1>Perfis dos Políticos.</h1>
-	<p class="marketing-byline">Pesquise por políticos, visualize os
-		projetos que ele fez e opine a respeito.</p>
+    <h1>Perfis dos Políticos.</h1>
+
+    <h2 class="marketing-byline">Pesquise por políticos, visualize os projetos que ele fez e opine a respeito.</h2>
 </div>
 
+<form action="{{search_url}}" method="post">
+    <input type="text" name="nome" class="input-xlarge" placeholder="Digite o nome do vereador">
+    <button type="submit" class="btn  btn-medium"><i class="icon-search"></i> Buscar Vereador</button>
+</form>
 
 <table class="table table-striped">
-	<thead>
-		<tr>
-			<th>Vereador</th>
-			<th>Nome</th>
-			<th>Partido</th>
-		</tr>
-	</thead>
-	<tbody>
-		{% for politico in politicos %}
-		<tr>
-			<td>
-				<img src="/commom/static/img/vereadores/{{politico.foto}}.jpg" alt="{{politico.nome}}" title="{{politico.nome}}">
-			</td>
-			<td>
-				<h2>
-					<a href="/politicos/perfil/">{{politico.nome}}</a>
-				</h2>
-			</td>
-			<td><p>{{politico.partido}}</p></td>
-		</tr>
-		{% endfor %}
+    <thead>
+    <tr>
+        <th>Vereador</th>
+        <th>Nome</th>
+        <th>Partido</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for politico in politicos %}
+    <tr>
+        <td><img
+                src="/common/static/img/vereadores/{{politico.foto}}.jpg"
+                alt="{{politico.nome}}" title="{{politico.nome}}"></td>
+        <td>
+            <h2>
+                <a href="/politicos/perfil/{{politico.key.urlsafe()}}">{{politico.nome}}</a>
+            </h2>
+        </td>
+        <td><p>{{politico.partido}}</p></td>
+    </tr>
+    {% endfor %}
 </table>
 
 {% endblock %}
