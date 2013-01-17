@@ -14,25 +14,33 @@ Iniciando o desenvolvimento
 ================
 
   Instala o distribute
+  
     $ sudo apt-­‐get install curl
     $ curl -­‐O http://python-­‐distribute.org/distribute_setup.py $ sudo python distribute_setup.py
   
   Instala o PIP, virtualenv
+  
     $ sudo easy_install pip
     $ sudo pip install virtualenv
     
   Cria um novo ambiente virtual
+  
     $ virtualenv -­‐-­‐no-­‐site-­‐packages -­‐-­‐distribute projetospoliticos
     $ source bin/activate
   
   Clona o repositório
+    
     $ git clone git@github.com:PauloLuan/ProjetosPoliticosSJC.git
     $ cd ProjetosPoliticosSJC/projetospoliticos
     
   Instala o Django no Virtualenv
+    
     $ pip install django
   
   Roda o aplicativo!
+    
     $ python manage.py runserver
   
-  Acesse http://locahost:8000
+  Acesse 
+    
+    http://localhost:8000
