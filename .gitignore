@@ -1,5 +1,11 @@
 .idea/
-binbuildincludelib 
+
+# Virtualenv's directories
+/bin
+/include
+/lib
+
+buildincludelib 
 local 
 Scripts 
 .Python 
