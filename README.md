@@ -25,8 +25,8 @@ Iniciando o desenvolvimento
     
   Cria um novo ambiente virtual
   
-    $ virtualenv -­‐-­‐no-­‐site-­‐packages -­‐-­‐distribute projetospoliticos
-    $ source bin/activate
+    $ virtualenv --distribute --no-site-packages ProjetosPoliticosSJC
+    $ source ProjetosPoliticosSJC/bin/activate
   
   Clona o repositório
     
