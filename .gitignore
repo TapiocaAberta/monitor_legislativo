@@ -8,7 +8,7 @@
 buildincludelib 
 local 
 Scripts 
-.Python 
+*.Python 
 *.pyc
 
 # Logs and databases #
