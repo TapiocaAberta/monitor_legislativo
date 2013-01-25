@@ -1,5 +1,5 @@
 import os
-# Django settings for src project.
+import dj_database_url
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -164,3 +164,6 @@ LOGGING = {
         },
     }
 }
+
+DATABASES = {'default': dj_database_url.config(default='postgres://localhost')}
+
