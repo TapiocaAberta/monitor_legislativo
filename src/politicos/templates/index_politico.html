@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Político</title>
+</head>
+<body>
+Index dos políticos...
+
+{% for politico in politicos %}
+    <ul>
+        <a href="{{ politico.id }}">
+            <br> {{ politico.nome }}
+            <br> {{ politico.descricao }}
+            <br>{{ politico.email }}
+            <br>{{ politico.telefone }}
+    </ul>
+{% endfor %}
+</body>
+</html>

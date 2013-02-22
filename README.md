@@ -15,8 +15,9 @@ Iniciando o desenvolvimento
 
   Instala o distribute
   
-    $ sudo apt-­‐get install curl
-    $ curl -­‐O http://python-­‐distribute.org/distribute_setup.py $ sudo python distribute_setup.py
+    $ sudo apt-get install curl
+    $ curl -O http://python-­‐distribute.org/distribute_setup.py 
+    $ sudo python distribute_setup.py
   
   Instala o PIP, virtualenv
   
