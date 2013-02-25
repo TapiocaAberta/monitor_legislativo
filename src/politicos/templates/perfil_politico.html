@@ -3,9 +3,15 @@ Perfil do político: {{ politico.id }}
 <hr>
 <br> {{ politico.nome }}
 <br> {{ politico.descricao }}
-<br>{{ politico.email }}
-<br>{{ politico.telefone }}
+<br> {{ politico.email }}
+<br> {{ politico.telefone }}
 
 <br><br>
 <hr>
 Projetos que este Político fez
+
+{% for projeto in projetos %}
+    <br> {{ projeto.nome }}
+    <br> {{ projeto.descricao }}
+    <br> {{ projeto.data }}
+{% endfor %}
