@@ -13,35 +13,40 @@ A idéia básica é unir a a forma como o "Ranking Políticos" lista e realiza o
 Iniciando o desenvolvimento
 ================
 
-  Instala o distribute
+  Instale o distribute:
   
     $ sudo apt-get install curl
     $ curl -O http://python-­‐distribute.org/distribute_setup.py 
     $ sudo python distribute_setup.py
   
-  Instala o PIP, virtualenv
+  Instale o PIP e o virtualenv:
   
     $ sudo easy_install pip
     $ sudo pip install virtualenv
-    
-  Cria um novo ambiente virtual
-  
-    $ virtualenv --distribute --no-site-packages ProjetosPoliticosSJC
-    $ source ProjetosPoliticosSJC/bin/activate
-  
-  Clona o repositório
+
+  Clone o repositório
     
     $ git clone git@github.com:PauloLuan/ProjetosPoliticosSJC.git
     $ cd ProjetosPoliticosSJC/projetospoliticos
-    
-  Instala o Django no Virtualenv
+
+  Crie um novo ambiente virtual:
+
+    $ virtualenv --distribute --no-site-packages ProjetosPoliticosSJC
+    $ source ProjetosPoliticosSJC/bin/activate
+
+  Instale o Django no Virtualenv
     
     $ pip install django
   
-  Roda o aplicativo!
+  Rode o aplicativo!
     
     $ python manage.py runserver
   
   Acesse 
     
     http://localhost:8000
+
+  Contribua! Críticas e sugestões e pull requests são bem vindos.
+
+  Ajude-nos a construir um país mais democrático!
+  <img src="http://3.bp.blogspot.com/_ayB_UOMOmWM/TI4qo3YTu-I/AAAAAAAALO8/eNQtvpCCNJA/s1600/democracia_no_brasil.jpg" width="900px"/>
