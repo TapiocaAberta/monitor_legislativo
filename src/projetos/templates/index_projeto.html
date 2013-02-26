@@ -1,9 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Projetos</title>
-</head>
-<body>
-    Index Projetos
-</body>
+    <head>
+        <title>Projetos</title>
+    </head>
+    <body>
+    Listagem de todos os projetos criados
+    <br/><br/>
+
+    {% for projeto in projetos %}
+        {# Cada "projeto" é um objeto do model Projeto. #}
+        <br/>
+        {{ projeto.nome }}
+        <br/>
+        {{ projeto.descricao }}
+        <br/>
+        {{ projeto.data_criacao }}
+        <br/>
+        <br/>
+        <br/>
+    {% endfor %}
+
+    <div class="pagination">
+        <span class="step-links">
+            {% if projetos.has_previous %}
+                <a href="?page={{ projetos.previous_page_number }}">anterior</a>
+            {% endif %}
+
+            <span class="current">
+                Página {{ projetos.number }} de {{ projetos.paginator.num_pages }}.
+            </span>
+
+            {% if projetos.has_next %}
+                <a href="?page={{ projetos.next_page_number }}">próxima</a>
+            {% endif %}
+        </span>
+    </div>
+    </body>
 </html>
