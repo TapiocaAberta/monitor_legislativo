@@ -49,4 +49,5 @@ Iniciando o desenvolvimento
   Contribua! Críticas, sugestões e pull requests são bem vindos.
 
   Ajude-nos a construir um país mais democrático!
-  <img src="http://3.bp.blogspot.com/_ayB_UOMOmWM/TI4qo3YTu-I/AAAAAAAALO8/eNQtvpCCNJA/s1600/democracia_no_brasil.jpg" width="500px"/>
+
+  <img src="http://3.bp.blogspot.com/_ayB_UOMOmWM/TI4qo3YTu-I/AAAAAAAALO8/eNQtvpCCNJA/s1600/democracia_no_brasil.jpg" width="900px"/>

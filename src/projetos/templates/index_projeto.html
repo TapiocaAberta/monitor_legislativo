@@ -10,7 +10,7 @@
     {% for projeto in projetos %}
         {# Cada "projeto" é um objeto do model Projeto. #}
         <br/>
-        {{ projeto.nome }}
+        <a href="/projetos/{{ projeto.id }}">{{ projeto.nome }}</a>
         <br/>
         {{ projeto.descricao }}
         <br/>

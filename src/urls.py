@@ -4,7 +4,7 @@ from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from core.views import homepage
 from politicos.views import homepage_politico, perfil_politico
-from projetos.views import homepage_projetos
+from projetos.views import homepage_projetos, detalhe_projeto
 import settings
 
 # Uncomment the next two lines to enable the admin:
@@ -30,9 +30,8 @@ urlpatterns += patterns('politicos.views',
 )
 
 urlpatterns += patterns('projetos.views',
-    (r'^projetos/', homepage_projetos),
-    (r'^projetos/detalhe/', homepage_projetos),
-
+    (r'^projetos/$', homepage_projetos),
+    (r'^projetos/(?P<projeto_id>\d+)/$', detalhe_projeto),
 )
 
 #urlpatterns += patterns('ocorrencias.views',
