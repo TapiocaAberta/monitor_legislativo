@@ -3,6 +3,7 @@ from django.conf.urls import patterns, include
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from core.views import homepage
+from ocorrencias.views import homepage_ocorrencia
 from politicos.views import homepage_politico, perfil_politico
 from projetos.views import homepage_projetos, detalhe_projeto
 import settings
@@ -34,9 +35,9 @@ urlpatterns += patterns('projetos.views',
     (r'^projetos/(?P<projeto_id>\d+)/$', detalhe_projeto),
 )
 
-#urlpatterns += patterns('ocorrencias.views',
-#    (r'^ocorrencias/', homepage_ocorrencia),
-#)
+urlpatterns += patterns('ocorrencias.views',
+    (r'^ocorrencias/', homepage_ocorrencia),
+)
 
 urlpatterns += staticfiles_urlpatterns()
 
